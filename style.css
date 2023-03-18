@@ -114,14 +114,14 @@ header {
 }
 
 /* About */
-.about {
+#about {
   padding: 100px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.about img {
+#about img {
   width: 50%;
 }
 
@@ -129,37 +129,37 @@ header {
   width: 45%;
 }
 
-.about h2 {
+#about h2 {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.about p {
+#about p {
   font-size: 20px;
   margin-bottom: 20px;
 }
 
 /* Contact */
-.contact {
+#contact {
   padding: 100px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.contact form {
+#contact form {
   width: 50%;
 }
 
-.contact form label {
+#contact form label {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
-.contact form input,
-.contact form textarea {
+#contact form input,
+#contact form textarea {
   width: 100%;
   padding: 10px;
   font-size: 16px;
@@ -167,7 +167,7 @@ header {
   border: 1px solid #ddd;
 }
 
-.contact form textarea {
+#contact form textarea {
   height: 150px;
 }
 
@@ -210,26 +210,26 @@ footer p {
     font-weight: bold;
   }
 
-  .about img {
+  #about img {
     float: none;
     margin: 0 auto;
     margin-bottom: 30px;
   }
 
-  .about p {
+  #about p {
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
   }
 
-  .contact form input[type="text"],
-  .contact form input[type="email"],
-  .contact form textarea {
+  #contact form input[type="text"],
+  #contact form input[type="email"],
+  #contact form textarea {
     width: 100%;
     margin-bottom: 20px;
   }
 
-  .contact form button[type="submit"] {
+  #contact form button[type="submit"] {
     width: 100%;
   }
 
