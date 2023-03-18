@@ -1,71 +1,236 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #333;
+}
+
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff7f50;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header */
 header {
-    background-color: #222;
-    color: #fff;
-    padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 36px;
+.logo {
+  font-size: 24px;
+  font-weight: 700;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+.navigation ul {
+  display: flex;
+  justify-content: center;
 }
 
-nav li {
-    margin-right: 20px;
+.navigation ul li {
+  margin: 0 10px;
 }
 
-nav li:last-child {
-    margin-right: 0;
+.navigation ul li a {
+  font-size: 18px;
+  font-weight: 600;
 }
 
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0;
 }
 
-section {
-    padding: 50px 0;
-    background-color: #f9f9f9;
+.hero .text {
+  width: 50%;
 }
 
-section h2 {
-    margin: 0;
-    font-size: 32px;
-    text-align: center;
+.hero h1 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 30px;
 }
 
-section p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-top: 20px;
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
 }
 
-section a {
-    color: #222;
+.hero .btn {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #ff7f50;
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
 }
+
+.hero .btn:hover {
+  background-color: #333;
+}
+
+.hero img {
+  width: 45%;
+}
+
+/* About */
+.about {
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about img {
+  width: 50%;
+}
+
+.about-text {
+  width: 45%;
+}
+
+.about h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* Contact */
+.contact {
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact form {
+  width: 50%;
+}
+
+.contact form label {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+
+.contact form textarea {
+  height: 150px;
+}
+
+/* Footer */
 
 footer {
-    background-color: #222;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f5f5f5;
+  text-align: center;
 }
 
 footer p {
-    margin: 0;
-    font-size: 14px;
+  margin-bottom: 0;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 767px) {
+
+  header {
+    height: auto;
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  .menu {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .menu li {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .menu a {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .about img {
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .about p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  .contact form input[type="text"],
+  .contact form input[type="email"],
+  .contact form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contact form button[type="submit"] {
+    width: 100%;
+  }
+
 }
